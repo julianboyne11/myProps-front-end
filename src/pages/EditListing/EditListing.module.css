@@ -91,10 +91,17 @@ button {
   background: var(--primary);
 }
 
-.container button:hover {
+/* .container button:hover {
   width: 160px;
   font-weight: bold;
   height: 43px;
+} */
+
+.container > .deleteBtn {
+  margin-left: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input:focus {
@@ -164,6 +171,9 @@ input:focus {
   }
 
   .container>.tenantContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 300px;
   }
 }

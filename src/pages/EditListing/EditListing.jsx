@@ -34,7 +34,9 @@ const EditListing = (props) => {
 
   return (
     <>
-      <main className={styles.container}>
+      <main >
+        <div className={styles.container}>
+
         <form className={styles.formContainer} onSubmit={handleSubmit}>
           <h1>{form.address}</h1>
           <div className={styles.inputContainer}>
@@ -133,8 +135,9 @@ const EditListing = (props) => {
             />
           </div>
           <button type="submit">UPDATE</button>
-          <button onClick={() => props.handleDeleteListing(state._id)}>Delete Listing</button>
         </form>
+          <button className={styles.deleteBtn} onClick={() => props.handleDeleteListing(state._id)}>Delete Listing</button>
+        </div>
         <div className={styles.tenantContainer}>
           <div className={styles.tenantListContainer}>
             {state.tenants.length ?
